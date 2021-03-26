@@ -1,25 +1,30 @@
-/*
- * @Author: your name
- * @Date: 2021-03-19 09:36:22
- * @LastEditTime: 2021-03-26 16:11:22
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \my-app\src\App.js
- */
 // import logo from './logo.svg';
 import { Button } from 'antd';
 import './App.css';
 // import Counter from "./Components/Counter";
 // 引入container组件
+import ConterCon from "./container/ConterCon";
+import Count from  "./components/Count"
 function App() {
   return (
     <div>
+      <Count />
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Button type="primary">Welcome</Button>
         <p>
-          Company
+          Edit <code>src/App.js</code> and save to reload.
         </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          
+          Learn React
+        </a>
+        <ConterCon />
       </header>
     </div>
   );
